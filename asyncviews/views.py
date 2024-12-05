@@ -30,3 +30,7 @@ async  def async_view(request):
 def sync_view(request):
     http_call_sync()
     return HttpResponse("Blocking HTTP request")
+
+
+def home_view(request):
+    return HttpResponse("<br> Aula 5: Views Assincronas com Django Async Views OK <br> 127.0.0.1:8000/ home_view pagina inicial OK<br>127.0.0.1:8000/api/ Non-blocking HTTP request OK <br>127.0.0.1:8000/sync/ Blocking HTTP request OK ")
